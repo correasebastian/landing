@@ -1,0 +1,47 @@
+/* Empty. Add your own CSS if you like */
+
+.row-center {
+    justify-content: center;
+}
+
+.fx-col {
+    display: flex;
+    flex-direction: column;
+    height: 95%;
+}
+
+.full-view {
+    height: 100%;
+}
+
+.row-header {
+    /*flex: 0.3;*/
+}
+
+.row-header {
+    /*flex: 0.3;*/
+}
+
+.txt-center {
+    text-align: center;
+}
+
+.landing > .row {
+    flex: 1;
+}
+
+.fx-200 {
+    flex: 2 !important;
+}
+
+.list.signup > .item {
+    border: 0 !important;
+}
+
+.space-10 {
+    height: 10vh;
+}
+
+progress {
+    width: 95%;
+}

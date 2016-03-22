@@ -1,0 +1,36 @@
+<ion-view view-title="Title">
+    <ion-content scroll="false">
+        <div class="list signup signup-header">
+            <a class="item item-icon-left txt-center" href="#">
+                <i class="icon ion-email"></i>
+                <span>Check mail</span>
+            </a>
+        </div>
+        <div class="space-10"></div>
+        <div class="list signup" ng-form="userEmailForm">
+            <label class="item item-input item-stacked-label">
+                <span class="input-label">Email</span>
+                <input ng-model="user.email" type="email" name="email" placeholder="you@domain.com"  ng-pattern="/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/" required>
+            </label>
+            <div class="item">
+                <p class="help-block" ng-show="userEmailForm.email.$invalid && !userEmailForm.$pristine">Valid Email Required</p>
+            </div>
+            <!--      <label class="item item-input item-stacked-label">
+                <span class="input-label">Last Name</span>
+                <input type="text" placeholder="Suhr">
+            </label>
+            <label class="item item-input item-stacked-label">
+                <span class="input-label">Email</span>
+                <input type="text" placeholder="john@suhr.com">
+            </label> -->
+            <div class="item">
+                <progress max="100" value="50"> </progress>
+            </div>
+            <div class="item">
+                <button ng-disabled="userEmailForm.email.$invalid" class="button button-full button-positive">
+                    Proximo
+                </button>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>
